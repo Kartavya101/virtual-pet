@@ -18,7 +18,10 @@ foodStock= database.ref('Food').on("value",readStock)
 function draw() {  
 background(46, 139, 87)
   drawSprites();
-if(keyWentDown("up")){
+  textSize(30)
+  text("food left:" + foodS, 300,50);
+  
+  if(keyWentDown("up")){
   writeStock(foodS)
 dog.addImage(happyDog)
 }
